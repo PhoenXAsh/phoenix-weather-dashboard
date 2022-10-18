@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Weatherblock from "./components/Weatherblock";
+import CurrentWeather from "./components/CurrentWeather";
+import './App.scss'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CurrentWeather />
+      <div className="hourlyWeather">
+        <Weatherblock type={0} />
+        <Weatherblock type={0} />
+        <Weatherblock type={0} />
+        <Weatherblock type={0} />
+        <Weatherblock type={0} />
+        <Weatherblock type={0} />
+        <Weatherblock type={0} />
+      </div>
+      <div className="dailyWeather">
+        <Weatherblock type={1} />
+        <Weatherblock type={1} />
+        <Weatherblock type={1} />
+        <Weatherblock type={1} />
+        <Weatherblock type={1} />
+        <Weatherblock type={1} />
+        <Weatherblock type={1} />
+      </div>
     </div>
   );
 }

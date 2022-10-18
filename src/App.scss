@@ -1,0 +1,14 @@
+.App {
+    margin: 0;
+    padding: 0;
+    .hourlyWeather{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+    .dailyWeather{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+    background-color: #2C2F33;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    .hourBlock {
+        width: 6rem;
+        .hour {
+            text-align: center;
+        }
+        .hourTemp {
+            text-align: center;
+        }
+    }
+
+    .dayBlock {
+        width: 6rem;
+        .day{
+            text-align: center;
+        }
+        .high {
+            color: #DC143C;
+            text-align: center;
+        }
+        hr {
+            width: 5rem;
+        }
+        .low {
+            color: #7289DA;
+            text-align: center;
+        }
+    }
+}
